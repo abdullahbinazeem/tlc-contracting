@@ -48,9 +48,8 @@ const Navbar = () => {
         </div>
         <div className="hidden  md:flex gap-5 items-center font-bold text-black uppercase">
           {navItems.map((navItem, i) => (
-            <div className="flex gap-5 items-center">
+            <div className="flex gap-5 items-center" key={i}>
               <Link
-                key={i}
                 className=" lg:text-base text-sm cursor-pointer after:block after:h-[2px] after:w-[100%] after:scale-0 after:bg-primary after:transition-all hover:after:scale-110 transition-all"
                 href={navItem.url}
               >
