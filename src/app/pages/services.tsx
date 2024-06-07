@@ -54,7 +54,7 @@ const Services = () => {
       <div className="max-w-[1800px] m-auto px-10 py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
           {serviceList.map((service) => (
-            <a className="" href="#">
+            <a className="" href="#" key={service.title}>
               <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl group">
                 <Image
                   src={`/assets/services/images/${service.img}.jpg`}
