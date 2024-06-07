@@ -70,7 +70,7 @@ const Services = () => {
                       alt={service.title + " Icon"}
                       width={42}
                       height={42}
-                      className="text-white h-8 sm:w-12 h-8 sm:h-12"
+                      className="text-white w-8 sm:w-12 h-8 sm:h-12"
                     />
                     <h1 className=" text-white text-2xl sm:text-3xl lg:text-4xl font-bold">
                       {service.title}
