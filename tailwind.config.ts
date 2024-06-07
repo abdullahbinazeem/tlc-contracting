@@ -15,6 +15,7 @@ const config: Config = {
         logo: "#012164",
         primary: "#1C5484",
         black: "#272727",
+        lightblack: "#474747",
       },
     },
   },

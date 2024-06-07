@@ -34,16 +34,17 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center bg-white border px-8 xl:px-16 py-8 rounded-md drop-shadow-xl ">
+      <div className="flex justify-between items-center bg-white border px-8 xl:px-16 py-8 md:rounded-md drop-shadow-xl ">
         <div className="flex gap-4 items-center">
           <Image
             src="assets/logo/logo.svg"
             alt="TLC Logo"
             width={52}
             height={52}
+            className="w-10 h-10 md:w-14 md:h-14"
           />
-          <h1 className="text-lg lg:text-xl font-extrabold text-black">
-            TLC <span className="text-logo ">Contracting</span>
+          <h1 className="text-base md:text-lg lg:text-xl font-extrabold text-black">
+            TLC <span className="text-logo ">Contracting</span> Inc.
           </h1>
         </div>
         <div className="hidden  md:flex gap-5 items-center font-bold text-black uppercase">
