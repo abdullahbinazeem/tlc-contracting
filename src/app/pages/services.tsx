@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../components/container";
 
 import Image from "next/image";
+import { ChevronsRight } from "lucide-react";
 
 const serviceList = [
   {
@@ -83,6 +84,18 @@ const Services = () => {
               </div>
             </a>
           ))}
+        </div>
+        <div className="text-center mt-20">
+          <a
+            href=""
+            className=" relative hover:bg-black hover:-translate-y-4 transition-all py-3 sm:py-4 px-8 sm:px-10 pr-24 sm:pr-28 sm:text-lg md:text-xl overflow-hidden uppercase text-white font-semibold  bg-primary inline-block "
+          >
+            Get Started
+            <div className="absolute  top-0 right-0 h-full px-5 sm:px-6 after:absolute after:left-[50%] after:w-[50%] after:bg-[#EEEEEE] after:h-full grid place-content-center">
+              <ChevronsRight className="relative z-20" />
+              <div className="absolute top-[-25%]  w-[90%] h-[150%] bg-black z-10 -rotate-12" />
+            </div>
+          </a>
         </div>
       </div>
     </div>
