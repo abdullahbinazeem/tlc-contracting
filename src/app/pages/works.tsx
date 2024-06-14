@@ -171,8 +171,12 @@ const Works = () => {
       <div className="text-center">
         <p
           className={cn(
-            "inline-block cursor-pointer rounded-md border-primary border text-primary text-lg font-semibold hover:scale-110 py-4 px-7 transition-all mt-10",
-            seemore + 8 >= count ? "hidden" : ""
+            "inline-block cursor-pointer rounded-sm border-primary border text-primary md:text-lg font-medium hover:scale-110 py-4 px-7 transition-all mt-10",
+            seemore + 8 >= count
+              ? seemore + 4 >= count
+                ? "hidden"
+                : "sm:hidden"
+              : ""
           )}
           onClick={() => {
             setSeemore(seemore + 4);
