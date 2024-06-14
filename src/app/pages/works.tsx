@@ -5,36 +5,37 @@ import Container from "../components/container";
 
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { MinusIcon, PlusIcon } from "lucide-react";
 
 const filters = [
   {
     title: "renovations",
-    icon: "",
+    icon: "renovation",
     searchFor: "r",
   },
   {
     title: "plumbing",
-    icon: "",
+    icon: "plumbing",
     searchFor: "pl",
   },
   {
     title: "carpentry",
-    icon: "",
+    icon: "carpentry",
     searchFor: "c",
   },
   {
     title: "drywall",
-    icon: "",
+    icon: "drywall",
     searchFor: "d",
   },
   {
     title: "tiling",
-    icon: "",
+    icon: "tiling",
     searchFor: "t",
   },
   {
     title: "painting",
-    icon: "",
+    icon: "painting",
     searchFor: "pa",
   },
 ];
@@ -82,51 +83,89 @@ for (let i = 0; i < gallery.length; i++) {
 
 const Works = () => {
   const [seemore, setSeemore] = useState(0);
+  const [filter, setFilter] = useState("");
 
   let count = 0;
   return (
     <div id="about" className="py-40 min-h-[50vh]">
       <Container className="">
-        <div className="lg:flex gap-20  items-center">
-          <div className="flex-1 basis-0">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl text-lightblack font-semibold">
-              See our transformations!
-            </h2>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mt-4 leading-[110%]">
-              Our <span className="text-black">Works</span>
-            </h1>
-          </div>
-        </div>
-      </Container>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-0 px-5 md:px-3 mt-20">
-        {[...Array(largest)].map((x, i) =>
-          gallery.map((picture, index) =>
-            picture.index >= i + 1 ? (
+        <div className="">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-lightblack font-semibold">
+            See our transformations!
+          </h2>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mt-4 leading-[110%]">
+            Our <span className="text-black">Works</span>
+          </h1>
+          <div className="flex gap-3 md:gap-6 mt-10 flex-wrap">
+            {filters.map((filterItem, i) => (
               <div
-                key={picture.alt + " " + (i + 1)}
+                onClick={() => {
+                  if (filterItem.searchFor != filter) {
+                    setFilter(filterItem.searchFor);
+                  } else {
+                    setFilter("");
+                  }
+                }}
+                key={filterItem.searchFor}
                 className={cn(
-                  "relative aspect-square m-2 transition-all group overflow-hidden",
-                  ++count > 8 + seemore
-                    ? "scale-0 w-0 h-0 m-0"
-                    : count > 4 + seemore
-                    ? "max-[640px]:scale-0 max-[640px]:w-0 max-[640px]:h-0 max-[640px]:m-0"
+                  "select-none cursor-pointer hover:bg-gray-100 hover:scale-110 transition-all  capitalize bg-gray-200 py-2 lg:py-3 px-4 lg:px-6 rounded-sm flex gap-2 items-center group",
+                  filterItem.searchFor == filter
+                    ? "bg-primary hover:bg-primary hover:bg-opacity-85"
                     : ""
                 )}
               >
-                <Image
-                  src={
-                    "/assets/gallery/" + picture.title + "-" + (i + 1) + ".jpg"
-                  }
-                  alt={picture.alt + " " + (i + 1)}
-                  objectFit="cover"
-                  fill
-                  className="group-hover:scale-105 transition-all"
-                />
+                {filterItem.searchFor == filter ? (
+                  <MinusIcon
+                    className="text-white group-hover:rotate-180 transition-all w-4 h-4 lg:w-6 lg:h-6"
+                    strokeWidth={1.5}
+                  />
+                ) : (
+                  <PlusIcon
+                    className="text-primary group-hover:rotate-180 transition-all w-4 h-4 lg:w-6 lg:h-6"
+                    strokeWidth={1.5}
+                  />
+                )}
+
+                <p
+                  className={cn(
+                    "text-primary group-hover:font-semibold transition-all text-xs md:text-sm lg:text-base",
+                    filterItem.searchFor == filter ? "text-white" : ""
+                  )}
+                >
+                  {filterItem.title}
+                </p>
               </div>
-            ) : (
-              ""
-            )
-          )
+            ))}
+          </div>
+        </div>
+      </Container>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-0 px-5 md:px-3 mt-10 lg:mt-20">
+        {[...Array(largest)].map((x, i) =>
+          gallery.map((picture, index) => (
+            <div
+              key={picture.alt + " " + (i + 1)}
+              className={cn(
+                "relative aspect-square m-2 transition-all initial  group overflow-hidden",
+                picture.index >= i + 1 && (picture.title == filter || !filter)
+                  ? ++count > 8 + seemore
+                    ? "scale-0 w-0 h-0 m-0"
+                    : count > 4 + seemore
+                    ? "max-[640px]:scale-0 max-[640px]:w-0 max-[640px]:h-0 max-[640px]:m-0"
+                    : "block"
+                  : "absolute scale-0 w-0 h-0 m-0"
+              )}
+            >
+              <Image
+                src={
+                  "/assets/gallery/" + picture.title + "-" + (i + 1) + ".jpg"
+                }
+                alt={picture.alt + " " + (i + 1)}
+                objectFit="cover"
+                fill
+                className="group-hover:scale-105 transition-all"
+              />
+            </div>
+          ))
         )}
       </div>
       <div className="text-center">

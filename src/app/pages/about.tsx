@@ -39,6 +39,7 @@ const About = () => {
                   <p>Flexible and Cost Effective</p>
                 </div>
               </div>
+              <div className="w-full h-[1px] bg-primary" />
               <div className="flex flex-col gap-4 text-lightblack  text-sn sm:text-base font-semibold">
                 <div className="flex gap-4 items-center">
                   <ShieldCheck
