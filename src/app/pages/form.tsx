@@ -17,7 +17,7 @@ const Form = () => {
         <div className="relative lg:flex">
           <div className="basis-3/5 bg-white px-8 py-12 md:px-12 lg:px-20">
             <h1 className="mb-10 text-2xl font-bold text-black md:text-3xl">
-              Get a Quote Now
+              Get An Estimate Now
             </h1>
 
             <form

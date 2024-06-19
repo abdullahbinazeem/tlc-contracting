@@ -7,6 +7,7 @@ import { ChevronsRight } from "lucide-react";
 const serviceList = [
   {
     icon: "renovation",
+    url: "renovation",
     title: "Renovation",
     description:
       "We manage other contractors such as plumbers, carpenter, electricians.",
@@ -14,6 +15,7 @@ const serviceList = [
   },
   {
     icon: "plumbing",
+    url: "plumbing",
     title: "Plumbing",
     description:
       "We manage other contractors such as plumbers, carpenter, electricians.",
@@ -21,6 +23,7 @@ const serviceList = [
   },
   {
     icon: "carpentry",
+    url: "carpentry",
     title: "Carpentry",
     description:
       "We manage other contractors such as plumbers, carpenter, electricians.",
@@ -28,6 +31,7 @@ const serviceList = [
   },
   {
     icon: "drywall",
+    url: "drywall",
     title: "Drywall",
     description:
       "We manage other contractors such as plumbers, carpenter, electricians.",
@@ -35,6 +39,7 @@ const serviceList = [
   },
   {
     icon: "tiling",
+    url: "tiling",
     title: "Tiling",
     description:
       "We manage other contractors such as plumbers, carpenter, electricians.",
@@ -42,6 +47,7 @@ const serviceList = [
   },
   {
     icon: "painting",
+    url: "painting",
     title: "Painting",
     description:
       "We manage other contractors such as plumbers, carpenter, electricians.",
@@ -55,7 +61,11 @@ const Services = () => {
       <div className="m-auto max-w-[1800px] px-5 py-20 sm:px-10">
         <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
           {serviceList.map((service) => (
-            <a className="" href="#" key={service.title}>
+            <a
+              className=""
+              href={`/services/${service.url}`}
+              key={service.title}
+            >
               <div className="group relative h-[400px] overflow-hidden rounded-xl md:h-[500px]">
                 <Image
                   src={`/assets/services/images/${service.img}.jpg`}
