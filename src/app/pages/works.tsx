@@ -87,16 +87,16 @@ const Works = () => {
 
   let count = 0;
   return (
-    <div id="about" className="py-40 min-h-[50vh]">
+    <div id="about" className="min-h-[50vh] py-40">
       <Container className="">
         <div className="">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-lightblack font-semibold">
+          <h2 className="text-2xl font-semibold text-lightblack md:text-3xl lg:text-4xl">
             See our transformations!
           </h2>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mt-4 leading-[110%]">
+          <h1 className="mt-4 text-4xl font-bold leading-[110%] text-primary md:text-5xl lg:text-6xl">
             Our <span className="text-black">Works</span>
           </h1>
-          <div className="flex gap-3 md:gap-6 mt-10 flex-wrap">
+          <div className="mt-10 flex flex-wrap gap-3 md:gap-6">
             {filters.map((filterItem, i) => (
               <div
                 onClick={() => {
@@ -108,28 +108,28 @@ const Works = () => {
                 }}
                 key={filterItem.searchFor}
                 className={cn(
-                  "select-none cursor-pointer hover:bg-gray-100 hover:scale-110 transition-all  capitalize bg-gray-200 py-2 lg:py-3 px-4 lg:px-6 rounded-sm flex gap-2 items-center group",
+                  "group flex cursor-pointer select-none items-center gap-2 rounded-sm bg-gray-200 px-4 py-2 capitalize transition-all hover:scale-110 hover:bg-gray-100 lg:px-6 lg:py-3",
                   filterItem.searchFor == filter
                     ? "bg-primary hover:bg-primary hover:bg-opacity-85"
-                    : ""
+                    : "",
                 )}
               >
                 {filterItem.searchFor == filter ? (
                   <MinusIcon
-                    className="text-white group-hover:rotate-180 transition-all w-4 h-4 lg:w-6 lg:h-6"
+                    className="h-4 w-4 text-white transition-all group-hover:rotate-180 lg:h-6 lg:w-6"
                     strokeWidth={1.5}
                   />
                 ) : (
                   <PlusIcon
-                    className="text-primary group-hover:rotate-180 transition-all w-4 h-4 lg:w-6 lg:h-6"
+                    className="h-4 w-4 text-primary transition-all group-hover:rotate-180 lg:h-6 lg:w-6"
                     strokeWidth={1.5}
                   />
                 )}
 
                 <p
                   className={cn(
-                    "text-primary group-hover:font-semibold transition-all text-xs md:text-sm lg:text-base",
-                    filterItem.searchFor == filter ? "text-white" : ""
+                    "text-xs text-primary transition-all group-hover:font-semibold md:text-sm lg:text-base",
+                    filterItem.searchFor == filter ? "text-white" : "",
                   )}
                 >
                   {filterItem.title}
@@ -139,44 +139,47 @@ const Works = () => {
           </div>
         </div>
       </Container>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-0 px-5 md:px-3 mt-10 lg:mt-20">
+      <div className="mt-10 grid gap-0 px-5 sm:grid-cols-2 md:grid-cols-3 md:px-3 lg:mt-20 xl:grid-cols-4">
         {[...Array(largest)].map((x, i) =>
           gallery.map((picture, index) => (
             <div
               key={picture.alt + " " + (i + 1)}
               className={cn(
-                "relative aspect-square m-2 transition-all initial  group overflow-hidden",
+                "initial group relative m-2 aspect-square overflow-hidden transition-all",
                 picture.index >= i + 1 && (picture.title == filter || !filter)
                   ? ++count > 8 + seemore
-                    ? "scale-0 w-0 h-0 m-0"
+                    ? "m-0 h-0 w-0 scale-0"
                     : count > 4 + seemore
-                    ? "max-[640px]:scale-0 max-[640px]:w-0 max-[640px]:h-0 max-[640px]:m-0"
-                    : "block"
-                  : "absolute scale-0 w-0 h-0 m-0"
+                      ? "max-[640px]:m-0 max-[640px]:h-0 max-[640px]:w-0 max-[640px]:scale-0"
+                      : "block"
+                  : "absolute m-0 h-0 w-0 scale-0",
               )}
             >
-              <Image
-                src={
-                  "/assets/gallery/" + picture.title + "-" + (i + 1) + ".jpg"
-                }
-                alt={picture.alt + " " + (i + 1)}
-                objectFit="cover"
-                fill
-                className="group-hover:scale-105 transition-all"
-              />
+              {picture.index >= i + 1 ? (
+                <Image
+                  src={
+                    "/assets/gallery/" + picture.title + "-" + (i + 1) + ".jpg"
+                  }
+                  alt={picture.alt + " " + (i + 1)}
+                  fill
+                  className="object-cover transition-all group-hover:scale-105"
+                />
+              ) : (
+                ""
+              )}
             </div>
-          ))
+          )),
         )}
       </div>
       <div className="text-center">
         <p
           className={cn(
-            "inline-block cursor-pointer rounded-sm border-primary border text-primary md:text-lg font-medium hover:scale-110 py-4 px-7 transition-all mt-10",
+            "mt-10 inline-block cursor-pointer rounded-sm border border-primary px-7 py-4 font-medium text-primary transition-all hover:scale-110 md:text-lg",
             seemore + 8 >= count
               ? seemore + 4 >= count
                 ? "hidden"
                 : "sm:hidden"
-              : ""
+              : "",
           )}
           onClick={() => {
             setSeemore(seemore + 4);

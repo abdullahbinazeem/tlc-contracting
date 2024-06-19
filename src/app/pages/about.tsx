@@ -53,7 +53,7 @@ const About = () => {
                     className="text-primary w-6 h-6 sm:w-8 sm:h-8"
                     size={30}
                   />
-                  Cover liability insurance
+                  A+ Better Business Bureau Rating
                 </div>
                 <div className="flex gap-4 items-center">
                   <Trophy

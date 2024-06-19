@@ -12,18 +12,18 @@ const Hero = (props: Props) => {
       <div className="md:pt-10 md:px-5 m-auto max-w-[1320px]">
         <Navbar />
       </div>
-      <Container className="pb-10  m-0 bg-center">
-        <div className="md:flex md:flex-row-reverse mt-14 md:mt-28 items-center">
-          <div className="relative flex-1  aspect-square max-h-[25vh] m-auto md:max-h-[40vh]">
+      <div className="pb-10 m-auto max-w-[1420px] px-5  bg-center">
+        <div className="lg:flex lg:flex-row-reverse gap-20 mt-14 md:mt-28 items-center">
+          <div className="basis-2/3  relative  lg:max-h-none max-h-[35vh] md:max-h-[45vh]  aspect-[13/9] m-auto">
             <Image
-              src="/assets/hero/hero-graphic.png"
+              src="/assets/hero/hero-van.png"
               alt="BBB Business A Plus"
               fill
-              className="object-contain w-full md:mt-20"
+              className="object-contain w-full"
             />
           </div>
-          <div className="mt-12">
-            <h1 className="text-black text-4xl  sm:text-5xl xl:text-7xl font-extrabold tracking-wide leading-[110%]">
+          <div className="basis-1/3">
+            <h1 className="text-black text-4xl  sm:text-5xl xl:text-6xl font-extrabold tracking-wide leading-[110%]">
               YOUR GO-TO
               <span className="text-primary block">CONTRACTORS</span> In
               VICTORIA
@@ -42,7 +42,7 @@ const Hero = (props: Props) => {
             </a>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
