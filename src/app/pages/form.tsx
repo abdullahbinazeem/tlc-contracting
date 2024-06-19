@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const Form = () => {
   return (
-    <div className="bg-[#f9f9f9] py-40" id="form">
+    <div className="overflow-hidden bg-[#f9f9f9] py-40" id="form">
       <div className="m-auto max-w-[1320px] md:px-5">
         <div className="relative lg:flex">
           <div className="basis-3/5 bg-white px-8 py-12 md:px-12 lg:px-20">
