@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const Form = () => {
   return (
-    <div className="bg-[#f9f9f9] py-40">
+    <div className="bg-[#f9f9f9] py-40" id="form">
       <div className="m-auto max-w-[1320px] md:px-5">
         <div className="relative lg:flex">
           <div className="basis-3/5 bg-white px-8 py-12 md:px-12 lg:px-20">
@@ -75,12 +75,12 @@ const Form = () => {
                     <option value="default" disabled>
                       Select your service
                     </option>
-                    <option value="Flat Roofing">Flat Roofing</option>
-                    <option value="Roofing Installations/Repairg">
-                      Roofing Installations/Repair
-                    </option>
-                    <option value="Cleaning">Cleaning</option>
-                    <option value="Siding & Shingles">Siding & Shingles</option>
+                    <option value="Renovations">Renovations</option>
+                    <option value="Plumbing">Plumbing</option>
+                    <option value="Carpentry">Carpentry</option>
+                    <option value="Drywall">Drywall</option>
+                    <option value="Tiling">Tiling</option>
+                    <option value="Painting">Painting</option>
                     <option value="Other">Other</option>
                   </select>
                   <Scan

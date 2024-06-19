@@ -52,32 +52,32 @@ const serviceList = [
 const Services = () => {
   return (
     <div className="bg-[#F8F9FB]">
-      <div className="max-w-[1800px] m-auto px-5 sm:px-10 py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="m-auto max-w-[1800px] px-5 py-20 sm:px-10">
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
           {serviceList.map((service) => (
             <a className="" href="#" key={service.title}>
-              <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl group">
+              <div className="group relative h-[400px] overflow-hidden rounded-xl md:h-[500px]">
                 <Image
                   src={`/assets/services/images/${service.img}.jpg`}
                   alt={service.title}
                   fill
-                  className="object-cover group-hover:scale-125 transition-all duration-[300ms]"
+                  className="object-cover transition-all duration-[300ms] group-hover:scale-125"
                 />
-                <div className="absolute w-full h-full z-10 bg-[#111] opacity-70 group-hover:scale-0 group-hover:rotate-180 transition-all duration-[300ms]" />
-                <div className="absolute group-hover:bottom-10 bottom-[-25px] transition-all  left-6 sm:left-10 z-20 duration-300">
-                  <div className="flex gap-4 mb-4 items-center">
+                <div className="absolute z-10 h-full w-full bg-[#111] opacity-70 transition-all duration-[300ms] group-hover:rotate-180 group-hover:scale-0" />
+                <div className="absolute bottom-[-25px] left-6 z-20 transition-all duration-300 group-hover:bottom-10 sm:left-10">
+                  <div className="mb-4 flex items-center gap-4">
                     <Image
                       src={`/assets/services/icon/${service.icon}.svg`}
                       alt={service.title + " Icon"}
                       width={42}
                       height={42}
-                      className="text-white w-8 sm:w-12 h-8 sm:h-12"
+                      className="h-8 w-8 text-white sm:h-12 sm:w-12"
                     />
-                    <h1 className=" text-white text-2xl sm:text-3xl lg:text-4xl font-bold">
+                    <h1 className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
                       {service.title}
                     </h1>
                   </div>
-                  <p className="bg-black sm:text-base text-sm inline text-white font-semibold opacity-0 group-hover:opacity-100 transition-all">
+                  <p className="inline bg-black text-sm font-semibold text-white opacity-0 transition-all group-hover:opacity-100 sm:text-base">
                     {service.description}
                   </p>
                 </div>
@@ -85,15 +85,15 @@ const Services = () => {
             </a>
           ))}
         </div>
-        <div className="text-center mt-20">
+        <div className="mt-20 text-center">
           <a
-            href=""
-            className=" relative hover:bg-black hover:-translate-y-4 transition-all py-3 sm:py-4 px-8 sm:px-10 pr-24 sm:pr-28 sm:text-lg md:text-xl overflow-hidden uppercase text-white font-semibold  bg-primary inline-block "
+            href="#form"
+            className="relative inline-block overflow-hidden bg-primary px-8 py-3 pr-24 font-semibold uppercase text-white transition-all hover:-translate-y-4 hover:bg-black sm:px-10 sm:py-4 sm:pr-28 sm:text-lg md:text-xl"
           >
             Get Started
-            <div className="absolute  top-0 right-0 h-full px-5 sm:px-6 after:absolute after:left-[50%] after:w-[50%] after:bg-[#EEEEEE] after:h-full grid place-content-center">
+            <div className="absolute right-0 top-0 grid h-full place-content-center px-5 after:absolute after:left-[50%] after:h-full after:w-[50%] after:bg-[#F8F9FB] sm:px-6">
               <ChevronsRight className="relative z-20" />
-              <div className="absolute top-[-25%]  w-[90%] h-[150%] bg-black z-10 -rotate-12" />
+              <div className="absolute top-[-25%] z-10 h-[150%] w-[90%] -rotate-12 bg-black" />
             </div>
           </a>
         </div>
