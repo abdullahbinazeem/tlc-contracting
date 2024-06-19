@@ -1,12 +1,19 @@
 import React from "react";
 import Container from "../components/container";
-import { Mail, PhoneCall, Scan, UserRound } from "lucide-react";
+import {
+  Mail,
+  Notebook,
+  PhoneCall,
+  Scan,
+  TextSelect,
+  UserRound,
+} from "lucide-react";
 import Image from "next/image";
 
 const Form = () => {
   return (
     <div className="bg-[#f9f9f9] py-40">
-      <div className="m-auto max-w-[1320px] overflow-hidden md:px-5">
+      <div className="m-auto max-w-[1320px] md:px-5">
         <div className="relative lg:flex">
           <div className="basis-3/5 bg-white px-8 py-12 md:px-12 lg:px-20">
             <h1 className="mb-10 text-2xl font-bold text-black md:text-3xl">
@@ -81,15 +88,28 @@ const Form = () => {
                     size={24}
                   />
                 </div>
+                <div className="group relative">
+                  <textarea
+                    className="max-h-[360px] min-h-[60px] w-full appearance-none rounded-sm border border-gray-100 bg-gray-100 px-4 py-3 pl-12 text-xs font-medium text-black placeholder:text-gray-400 focus:border-primary focus:pl-4 focus:outline-none sm:text-sm"
+                    name="Message"
+                    placeholder="Message"
+                    required
+                    rows={4}
+                  />
+                  <TextSelect
+                    className="absolute left-3 top-3 m-auto text-gray-500 transition-all group-focus-within:translate-x-[-32px] group-focus-within:opacity-0"
+                    size={22}
+                  />
+                </div>
               </div>
               <button className="font-medoum mt-8 w-full rounded-sm bg-primary px-5 py-4 uppercase tracking-wide text-gray-100 focus:outline-none">
                 Submit Now
               </button>
             </form>
           </div>
-          <div className="relative bottom-0 top-0 m-auto hidden aspect-video w-[50%] lg:absolute lg:right-[-5%] lg:block">
+          <div className="relative bottom-0 top-0 m-auto hidden aspect-video w-[55%] lg:absolute lg:right-[-10%] lg:block">
             <Image
-              src="/assets/form-graphic.png"
+              src="/assets/formBackground.png"
               alt="Van"
               fill
               className="object-contain"

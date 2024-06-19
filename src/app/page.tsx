@@ -7,6 +7,7 @@ import Services from "./pages/services";
 import Works from "./pages/works";
 import Testimonials from "./pages/testimonials";
 import Form from "./pages/form";
+import Footer from "./pages/footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Works />
       <Testimonials />
       <Form />
+      <Footer />
     </>
   );
 }

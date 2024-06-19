@@ -8,35 +8,35 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/hero/hero-bg.jpg')] min-h-screen">
-      <div className="md:pt-10 md:px-5 m-auto max-w-[1320px]">
+    <div className="min-h-screen bg-[url('/assets/hero/hero-bg.jpg')]">
+      <div className="m-auto max-w-[1320px] md:px-5 md:pt-10">
         <Navbar />
       </div>
-      <div className="pb-10 m-auto max-w-[1420px] px-5  bg-center">
-        <div className="lg:flex lg:flex-row-reverse gap-20 mt-14 md:mt-28 items-center">
-          <div className="basis-2/3  relative  lg:max-h-none max-h-[35vh] md:max-h-[45vh]  aspect-[13/9] m-auto">
+      <div className="m-auto max-w-[1420px] bg-center px-5 pb-10">
+        <div className="mt-14 items-center gap-20 md:mt-28 lg:flex lg:flex-row-reverse">
+          <div className="relative m-auto aspect-[13/9] max-h-[35vh] basis-2/3 md:max-h-[45vh] lg:max-h-none">
             <Image
               src="/assets/hero/hero-van.png"
               alt="BBB Business A Plus"
               fill
-              className="object-contain w-full"
+              className="w-full object-contain"
             />
           </div>
           <div className="basis-1/3">
-            <h1 className="text-black text-4xl  sm:text-5xl xl:text-6xl font-extrabold tracking-wide leading-[110%]">
+            <h1 className="text-4xl font-extrabold leading-[110%] tracking-wide text-black sm:text-5xl xl:text-6xl">
               YOUR GO-TO
-              <span className="text-primary block">CONTRACTORS</span> In
+              <span className="block text-primary">CONTRACTORS</span> In
               VICTORIA
             </h1>
-            <p className="mt-6 text-lg lg:text-xl max-w-[500px]">
+            <p className="mt-6 max-w-[500px] text-lg lg:text-xl">
               We are Victoria’s very best contractor. In business since 2002 and{" "}
-              <span className="text-primary font-semibold">
+              <span className="font-semibold text-primary">
                 BBB A plus rating
               </span>{" "}
               since 2003.
             </p>
             <a href="#about">
-              <div className="border-2 border-[#EEEEEE] hover:border-primary transition-all mt-6 md:text-lg text-black uppercase font-semibold py-4 px-8 rounded-sm bg-[#EEEEEE] inline-block">
+              <div className="mt-6 inline-block rounded-sm border-2 border-[#EEEEEE] bg-[#EEEEEE] px-8 py-4 font-semibold uppercase text-black transition-all hover:border-primary md:text-lg">
                 See More
               </div>
             </a>
