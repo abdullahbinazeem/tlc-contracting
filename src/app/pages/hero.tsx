@@ -9,7 +9,7 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <div className="min-h-screen bg-[url('/assets/hero/hero-bg.jpg')]">
-      <div className="m-auto max-w-[1320px] md:px-5 md:pt-10">
+      <div className="sticky m-auto max-w-[1320px] md:px-5 md:pt-10">
         <Navbar />
       </div>
       <div className="m-auto max-w-[1420px] bg-center px-5 pb-10">
