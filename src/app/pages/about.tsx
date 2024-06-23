@@ -53,7 +53,7 @@ const About = () => {
                     className="h-6 w-6 text-primary sm:h-8 sm:w-8"
                     size={30}
                   />
-                  Liabilty Insured (3 million $) & WCB
+                  Liabilty Insured ($3,000,000) & WCB
                 </div>
               </div>
             </div>
