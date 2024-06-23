@@ -65,7 +65,7 @@ const page = () => {
       <div id="works" className="min-h-[50vh] py-40">
         <Container>
           <h1 className="mt-4 text-4xl font-bold leading-[110%] text-primary md:text-5xl lg:text-6xl">
-            Painting <span className="text-black">Services</span>
+            Renovation <span className="text-black">Services</span>
           </h1>
         </Container>
         <Gallery
