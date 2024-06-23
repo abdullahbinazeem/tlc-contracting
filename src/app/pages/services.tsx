@@ -9,49 +9,49 @@ const serviceList = [
     icon: "renovation",
     url: "renovation",
     title: "Renovation",
-    description:
-      "We manage other contractors such as plumbers, carpenter, electricians.",
+
     img: "renovation",
   },
   {
     icon: "plumbing",
     url: "plumbing",
     title: "Plumbing",
-    description:
-      "We manage other contractors such as plumbers, carpenter, electricians.",
+
     img: "plumbing",
   },
   {
     icon: "carpentry",
     url: "carpentry",
     title: "Carpentry",
-    description:
-      "We manage other contractors such as plumbers, carpenter, electricians.",
+
     img: "carpentry",
   },
   {
     icon: "drywall",
     url: "drywall",
     title: "Drywall",
-    description:
-      "We manage other contractors such as plumbers, carpenter, electricians.",
+
     img: "drywall",
   },
   {
     icon: "tiling",
     url: "tiling",
     title: "Tiling",
-    description:
-      "We manage other contractors such as plumbers, carpenter, electricians.",
+
     img: "tiling",
   },
   {
     icon: "painting",
     url: "painting",
     title: "Painting",
-    description:
-      "We manage other contractors such as plumbers, carpenter, electricians.",
+
     img: "painting",
+  },
+  {
+    icon: "flooring",
+    url: "flooring",
+    title: "Flooring",
+    img: "flooring",
   },
 ];
 

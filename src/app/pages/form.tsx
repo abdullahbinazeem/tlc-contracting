@@ -69,7 +69,7 @@ const Form = () => {
                 <div className="group relative">
                   <select
                     name="Subject"
-                    className="focus:border-secondary w-full rounded-sm border border-gray-100 bg-gray-100 px-4 py-3 pl-11 text-xs font-medium text-black transition-all placeholder:text-gray-400 focus:border-primary focus:pl-4 focus:outline-none sm:text-sm"
+                    className="focus:border-secondary w-full rounded-sm border border-gray-100 bg-gray-100 px-4 py-4 pl-11 text-xs font-medium text-black transition-all placeholder:text-gray-400 focus:border-primary focus:pl-4 focus:outline-none sm:text-sm"
                     defaultValue="default"
                   >
                     <option value="default" disabled>

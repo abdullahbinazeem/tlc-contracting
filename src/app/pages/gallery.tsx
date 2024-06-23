@@ -6,12 +6,6 @@ import Container from "../components/container";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-const gallery = {
-  title: "c",
-  index: 6,
-  alt: "Carpentry Photo",
-};
-
 type Props = {
   gallery: {
     title: string;

@@ -10,38 +10,48 @@ import { MinusIcon, PlusIcon } from "lucide-react";
 const filters = [
   {
     title: "renovations",
-    icon: "renovation",
-    searchFor: "r",
+    searchFor: "renovations",
+  },
+  {
+    title: "Project Management",
+    searchFor: "Project Management",
+  },
+  {
+    title: "Home Repairs",
+    searchFor: "Home Repairs",
+  },
+
+  {
+    title: "Bathrooms",
+    searchFor: "Bathrooms",
+  },
+  {
+    title: "Kitchens",
+    searchFor: "Jutcgebs",
   },
   {
     title: "plumbing",
-    icon: "plumbing",
-    searchFor: "pl",
+    searchFor: "plumbing",
   },
   {
     title: "carpentry",
-    icon: "carpentry",
-    searchFor: "c",
+    searchFor: "carpentry",
   },
   {
     title: "drywall",
-    icon: "drywall",
-    searchFor: "d",
+    searchFor: "drywall",
   },
   {
     title: "tiling",
-    icon: "tiling",
-    searchFor: "t",
+    searchFor: "tiling",
   },
   {
     title: "painting",
-    icon: "painting",
-    searchFor: "pa",
+    searchFor: "painting",
   },
   {
-    title: "painting",
-    icon: "painting",
-    searchFor: "pa",
+    title: "Laminate Countertops",
+    searchFor: "Laminate Countertops",
   },
 ];
 
