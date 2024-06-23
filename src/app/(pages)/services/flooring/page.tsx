@@ -69,9 +69,9 @@ const page = () => {
         </Container>
         <Gallery
           gallery={{
-            title: "pa",
-            index: 4,
-            alt: "Painting Photo",
+            title: "f",
+            index: 3,
+            alt: "Flooring Photo",
           }}
         />
       </div>
