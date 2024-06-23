@@ -24,17 +24,17 @@ const Hero = (props: Props) => {
           </div>
           <div className="basis-1/2">
             <h1 className="text-4xl font-extrabold leading-[110%] tracking-wide text-black sm:text-5xl xl:text-6xl">
-              <span className="xl:text-5xl">SERVING QUALITY</span>
+              <span className="xl:text-5xl">QUALITY</span>
               <span className="block text-primary">
                 RENOVATIONS & REPAIRS
               </span>{" "}
             </h1>
             <h1 className="mt-2 text-xl font-medium text-black sm:text-2xl xl:text-3xl">
-              In Southern Vancouver Island
+              Serving Southern Vancouver Island
             </h1>
             <p className="mt-6 max-w-[500px] text-lg lg:text-xl">
-              We are one the best contractors in Victoria. In business since
-              2002 and{" "}
+              Your trusted contractor on Southern Vancouver Island. In business
+              since 2002 and{" "}
               <span className="font-semibold text-primary">
                 BBB A plus rating
               </span>{" "}

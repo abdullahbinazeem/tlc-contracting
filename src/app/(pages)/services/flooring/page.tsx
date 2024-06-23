@@ -17,7 +17,7 @@ const page = () => {
     <div>
       <SubpageHero
         title="Flooring"
-        stitle="In Southern Vancouver Island"
+        stitle="On Southern Vancouver Island"
         cta="View Work"
         ctaUrl="#works"
       />
