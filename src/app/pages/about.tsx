@@ -18,9 +18,9 @@ const About = () => {
             </h1>
             <div className="mt-6 flex flex-col gap-10">
               <p className="max-w-[700px] text-lightblack md:text-lg">
-                With 40 years of experience, and 20 years in business. We have a
-                wealth of knowledge and skills in renovations & repairs. We
-                leave every client satisfied and provide afforable and cost
+                With 40 years of experience, and over 20 years in business. We
+                have a wealth of knowledge and skills in renovations & repairs.
+                We leave every client satisfied and provide afforable and cost
                 effective prices for every single customer.
               </p>
               <div className="flex gap-10 text-sm font-semibold sm:text-base md:gap-20">
