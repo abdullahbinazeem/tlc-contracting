@@ -6,28 +6,24 @@ import { ChevronsRight } from "lucide-react";
 
 const serviceList = [
   {
-    icon: "renovation",
     url: "renovation",
     title: "Renovation",
 
     img: "renovation",
   },
   {
-    icon: "plumbing",
     url: "plumbing",
     title: "Plumbing",
 
     img: "plumbing",
   },
   {
-    icon: "carpentry",
     url: "carpentry",
     title: "Carpentry",
 
     img: "carpentry",
   },
   {
-    icon: "drywall",
     url: "drywall",
     title: "Drywall",
 
@@ -48,7 +44,6 @@ const serviceList = [
     img: "painting",
   },
   {
-    icon: "flooring",
     url: "flooring",
     title: "Flooring",
     img: "flooring",

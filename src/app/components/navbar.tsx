@@ -16,8 +16,8 @@ const navItems = [
     url: "/services",
   },
   {
-    name: "Works",
-    url: "/works",
+    name: "Gallery",
+    url: "/gallery",
   },
   {
     name: "Contact",

@@ -15,8 +15,9 @@ import { Pagination } from "swiper/modules";
 const carouselItems = [
   {
     url: "",
-    name: "Sample",
-    description: "Sample",
+    name: "Karen and Tunc Erdem",
+    description:
+      "Thanks for everything you have done for us and our house, you have made a huge difference to our quality of life and our special needs situation. You are an amazing craftsman. Great Job!",
   },
 ];
 

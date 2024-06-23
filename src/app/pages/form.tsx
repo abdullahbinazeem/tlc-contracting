@@ -88,10 +88,6 @@ const Form = () => {
                     </option>
                     <option value="Other">Other</option>
                   </select>
-                  <Scan
-                    className="absolute bottom-0 left-3 top-0 m-auto text-gray-500 transition-all group-focus-within:translate-x-[-32px] group-focus-within:opacity-0"
-                    size={24}
-                  />
                 </div>
                 <div className="group relative">
                   <textarea

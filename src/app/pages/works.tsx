@@ -27,7 +27,7 @@ const filters = [
   },
   {
     title: "Kitchens",
-    searchFor: "Jutcgebs",
+    searchFor: "Kitchens",
   },
   {
     title: "plumbing",
@@ -85,31 +85,6 @@ const gallery = [
     title: "t",
     index: 8,
     alt: "Tiling Photo",
-  },
-  {
-    title: "r",
-    index: 8,
-    alt: "Repairing Photo",
-  },
-  {
-    title: "b",
-    index: 8,
-    alt: "Bathroom Photo",
-  },
-  {
-    title: "k",
-    index: 8,
-    alt: "Kitchen Photo",
-  },
-  {
-    title: "k",
-    index: 8,
-    alt: "Deck Photo",
-  },
-  {
-    title: "pm",
-    index: 8,
-    alt: "Project Management Photo",
   },
 ];
 

@@ -7,13 +7,13 @@ const ContactOptions = [
   {
     title: "Our Location",
     info: "210 Suzanne Pl, Victoria, BC V9B 1P1",
-    link: "https://maps.app.goo.gl/cxiiPkJNfwJEYCtw6",
+    link: "https://maps.app.goo.gl/cVYhYViAGWeHsqpVA",
     icon: Home,
   },
   {
     title: "Make a Call",
     info: "(250)-592-1782",
-    name: "Anthony Lalev",
+    name: "Tony Lalev",
     link: "tel:(250)-592-1782",
     icon: Phone,
   },
@@ -26,7 +26,7 @@ const ContactOptions = [
   {
     title: "Working Hours",
     info: "Everyday 8am - 6pm. 24 hours Emergency Available",
-    link: "https://maps.app.goo.gl/cxiiPkJNfwJEYCtw6",
+    link: "https://maps.app.goo.gl/cVYhYViAGWeHsqpVA",
     icon: DoorOpen,
   },
 ];
