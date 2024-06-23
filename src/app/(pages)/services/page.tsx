@@ -86,22 +86,12 @@ const page = () => {
                   className="object-cover transition-all duration-[300ms] group-hover:scale-125"
                 />
                 <div className="absolute z-10 h-full w-full bg-[#111] opacity-70 transition-all duration-[300ms] group-hover:rotate-180 group-hover:scale-0" />
-                <div className="absolute bottom-[-25px] left-6 z-20 transition-all duration-300 group-hover:bottom-10 sm:left-10">
+                <div className="absolute bottom-10 bottom-[-25px] left-6 z-20 transition-all duration-300 sm:left-10">
                   <div className="mb-4 flex items-center gap-4">
-                    <Image
-                      src={`/assets/services/icon/${service.icon}.svg`}
-                      alt={service.title + " Icon"}
-                      width={42}
-                      height={42}
-                      className="h-8 w-8 text-white sm:h-12 sm:w-12"
-                    />
                     <h1 className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
                       {service.title}
                     </h1>
                   </div>
-                  <p className="inline bg-black text-sm font-semibold text-white opacity-0 transition-all group-hover:opacity-100 sm:text-base">
-                    {service.description}
-                  </p>
                 </div>
               </div>
             </a>

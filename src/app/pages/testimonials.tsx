@@ -15,39 +15,8 @@ import { Pagination } from "swiper/modules";
 const carouselItems = [
   {
     url: "",
-    name: "Lucas Jones",
-    description:
-      "The level of cleanliness achieved by this house cleaning company is unmatched. From the floors to the ceiling, every inch of my home in Victoria was thoroughly cleaned. Highly satisfied!",
-  },
-  {
-    url: "",
-    name: "Adam Peterson",
-    description:
-      "A friend recommended this cleaning service, and I'm so glad I tried it. The results were outstanding – my house was cleaned to perfection, and the staff was courteous and friendly.",
-  },
-  {
-    url: "",
-    name: "Sophia McCarter",
-    description:
-      "Impressed with the professionalism and efficiency of this house cleaning company. The team worked quickly without compromising on quality. My Victoria home has never been so clean and organized!",
-  },
-  {
-    url: "",
-    name: "William Hernandez",
-    description:
-      "Outstanding cleaning service! The crew was friendly, and they paid attention to the areas I highlighted. My house has never been this clean, and I'm grateful for the meticulous work they did.",
-  },
-  {
-    url: "",
-    name: "Michael Weaver",
-    description:
-      "Hiring this house cleaning company was a game-changer for me. They tackled even the toughest stains and left my house looking brand new. Couldn't be happier with the results!",
-  },
-  {
-    url: "",
-    name: "Douglas Holmes",
-    description:
-      "Five-star service all the way! The cleaners were prompt, efficient, and left my house in Victoria smelling fresh and looking immaculate. I highly recommend their services.",
+    name: "Sample",
+    description: "Sample",
   },
 ];
 

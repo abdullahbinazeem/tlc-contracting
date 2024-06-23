@@ -9,12 +9,12 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <div className="min-h-screen bg-[url('/assets/hero/hero-bg.jpg')]">
-      <div className="sticky m-auto max-w-[1320px] md:px-5 md:pt-10">
+      <div className="z-[10] m-auto max-w-[1320px] md:px-5 md:pt-10">
         <Navbar />
       </div>
       <div className="m-auto max-w-[1420px] bg-center px-5 pb-10">
         <div className="mt-14 items-center gap-20 md:mt-28 lg:flex lg:flex-row-reverse">
-          <div className="relative m-auto aspect-[13/9] max-h-[35vh] basis-2/3 md:max-h-[45vh] lg:max-h-none">
+          <div className="relative z-[0] m-auto aspect-[13/9] max-h-[35vh] basis-2/3 md:max-h-[45vh] lg:max-h-none">
             <Image
               src="/assets/hero/hero-van.png"
               alt="BBB Business A Plus"
@@ -22,14 +22,19 @@ const Hero = (props: Props) => {
               className="w-full object-contain"
             />
           </div>
-          <div className="basis-1/3">
+          <div className="basis-1/2">
             <h1 className="text-4xl font-extrabold leading-[110%] tracking-wide text-black sm:text-5xl xl:text-6xl">
-              YOUR GO-TO
-              <span className="block text-primary">CONTRACTORS</span> In
-              VICTORIA
+              <span className="xl:text-5xl">SERVING QUALITY</span>
+              <span className="block text-primary">
+                RENOVATIONS & REPAIRS
+              </span>{" "}
+            </h1>
+            <h1 className="mt-2 text-xl font-medium text-black sm:text-2xl xl:text-3xl">
+              In Southern Vancouver Island
             </h1>
             <p className="mt-6 max-w-[500px] text-lg lg:text-xl">
-              We are Victoria’s very best contractor. In business since 2002 and{" "}
+              We are one the best contractors in Victoria. In business since
+              2002 and{" "}
               <span className="font-semibold text-primary">
                 BBB A plus rating
               </span>{" "}

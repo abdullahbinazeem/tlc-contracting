@@ -81,6 +81,11 @@ const Form = () => {
                     <option value="Drywall">Drywall</option>
                     <option value="Tiling">Tiling</option>
                     <option value="Painting">Painting</option>
+                    <option value="Kitchen">Kitchen</option>
+                    <option value="Bathrooms">Bathrooms</option>
+                    <option value="Project Management">
+                      Project Management
+                    </option>
                     <option value="Other">Other</option>
                   </select>
                   <Scan

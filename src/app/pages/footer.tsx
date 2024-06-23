@@ -6,26 +6,26 @@ import Image from "next/image";
 const ContactOptions = [
   {
     title: "Our Location",
-    info: "4070 tuxedo drive, Victoria, BC, V8X 2L3",
+    info: "210 Suzanne Pl, Victoria, BC V9B 1P1",
     link: "https://maps.app.goo.gl/cxiiPkJNfwJEYCtw6",
     icon: Home,
   },
   {
     title: "Make a Call",
-    info: "(250)-918-5591",
+    info: "(250)-592-1782",
     name: "Anthony Lalev",
-    link: "tel:(250)-918-5591",
+    link: "tel:(250)-592-1782",
     icon: Phone,
   },
   {
     title: "Send are Email",
-    info: "info@albcanada.ca",
-    link: "mailto:info@albcanada.ca",
+    info: "tlccontractinginc1@gmail.com",
+    link: "mailto:tlccontractinginc1@gmail.com",
     icon: Mails,
   },
   {
     title: "Working Hours",
-    info: "Everyday 8am - 6pm",
+    info: "Everyday 8am - 6pm. 24 hours Emergency Available",
     link: "https://maps.app.goo.gl/cxiiPkJNfwJEYCtw6",
     icon: DoorOpen,
   },
@@ -40,8 +40,8 @@ const Footer = () => {
             TLC Contracting
           </h1>
           <p className="mt-4 text-lg text-white">
-            Best Contractor of Victoria. In business since 2002, and A plus
-            rating since 2003.
+            We are one the best contractors in Victoria. In business since 2002,
+            and A plus rating since 2003.
           </p>
           <div className="mt-12 flex flex-wrap justify-between gap-8">
             {ContactOptions.map((contact, i) => (
@@ -67,7 +67,7 @@ const Footer = () => {
       <div className="bg-[#111111]">
         <Container className="p-7">
           <p className="serrat text-center text-white">
-            © Copyright 2024 TLC Contracting
+            © Copyright 2024 TLC Contracting Inc.
           </p>
           <p className="serrat mt-2 cursor-pointer text-center text-white transition-all hover:underline">
             <a href="https://xaama.tech" target="_blank">

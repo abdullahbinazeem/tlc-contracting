@@ -38,6 +38,11 @@ const filters = [
     icon: "painting",
     searchFor: "pa",
   },
+  {
+    title: "painting",
+    icon: "painting",
+    searchFor: "pa",
+  },
 ];
 
 const gallery = [
@@ -71,6 +76,31 @@ const gallery = [
     index: 8,
     alt: "Tiling Photo",
   },
+  {
+    title: "r",
+    index: 8,
+    alt: "Repairing Photo",
+  },
+  {
+    title: "b",
+    index: 8,
+    alt: "Bathroom Photo",
+  },
+  {
+    title: "k",
+    index: 8,
+    alt: "Kitchen Photo",
+  },
+  {
+    title: "k",
+    index: 8,
+    alt: "Deck Photo",
+  },
+  {
+    title: "pm",
+    index: 8,
+    alt: "Project Management Photo",
+  },
 ];
 
 let largest = 0;
@@ -99,7 +129,7 @@ const Works = (props: Props) => {
             See our transformations!
           </h2>
           <h1 className="mt-4 text-4xl font-bold leading-[110%] text-primary md:text-5xl lg:text-6xl">
-            Our <span className="text-black">Works</span>
+            Our <span className="text-black">Services</span>
           </h1>
           {props.Removefilter == null ? (
             <div className="mt-10 flex flex-wrap gap-3 md:gap-6">
