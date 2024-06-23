@@ -22,7 +22,7 @@ const page = () => {
     <div>
       <SubpageHero
         title="Drywall"
-        stitle="In Victoria"
+        stitle="In Southern Vancouver Island"
         cta="View Work"
         ctaUrl="#works"
       />

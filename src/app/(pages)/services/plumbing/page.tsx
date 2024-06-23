@@ -23,7 +23,7 @@ const page = () => {
     <div>
       <SubpageHero
         title="Plumbing"
-        stitle="In Victoria"
+        stitle="In Southern Vancouver Island"
         cta="View Work"
         ctaUrl="#works"
       />
