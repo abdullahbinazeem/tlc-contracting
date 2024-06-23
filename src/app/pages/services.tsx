@@ -7,7 +7,7 @@ import { ChevronsRight } from "lucide-react";
 const serviceList = [
   {
     url: "renovation",
-    title: "Renovation",
+    title: "Renovations",
 
     img: "renovation",
   },

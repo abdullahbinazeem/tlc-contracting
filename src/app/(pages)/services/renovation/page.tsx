@@ -13,8 +13,8 @@ import Gallery from "@/app/pages/gallery";
 
 const services = [
   "Kitchen Renovations",
-  "Whole Room Renovations",
-  "Basement Finishing and Renovations",
+  "Bathroom Renovations",
+  "Basement Renovations",
   "Exterior Renovations",
 ];
 
@@ -39,13 +39,13 @@ const page = () => {
               ))}
             </ul>
             <p className="mt-6 text-sm leading-[150%] md:text-base">
-              With years of experience, our team is dedicated to delivering
-              high-quality homes that meet the needs and expectations of our
-              clients. We understand that building a new home is a big
+              With 40 years of experience, our team is dedicated to delivering
+              high-quality remodeling that meet the needs and expectations of
+              our clients. We understand that rennovating a new home is a big
               investment and we strive to ensure that our clients are completely
               satisfied with the final result.
               <br /> <br />
-              We take a wholistic approach to your build. We’ll work with you to
+              We take a detailed approach to your build. We’ll work with you to
               identify your needs both now and in the future and put together a
               plan for a beautiful, functional, energy-efficient home that’s
               cost effective to maintain and matches your lifestyle.
