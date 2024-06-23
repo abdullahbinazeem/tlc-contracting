@@ -25,7 +25,7 @@ const ContactOptions = [
   },
   {
     title: "Working Hours",
-    info: "Everyday 8am - 6pm. 24 hours Emergency Available",
+    info: `Everyday 8am - 8pm. 24 hour Emergency Available`,
     link: "https://maps.app.goo.gl/cVYhYViAGWeHsqpVA",
     icon: DoorOpen,
   },

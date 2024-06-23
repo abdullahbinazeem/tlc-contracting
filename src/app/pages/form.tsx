@@ -108,9 +108,9 @@ const Form = () => {
               </button>
             </form>
           </div>
-          <div className="relative bottom-0 top-0 m-auto hidden aspect-video w-[55%] lg:absolute lg:right-[-10%] lg:block">
+          <div className="relative bottom-0 top-0 m-auto hidden aspect-video w-[50%] lg:absolute lg:right-[-10%] lg:block">
             <Image
-              src="/assets/formBackground.png"
+              src="/assets/form-graphic.png"
               alt="Van"
               fill
               className="object-contain"

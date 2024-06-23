@@ -93,7 +93,7 @@ const Navbar = () => {
       </div>
       <div
         className={cn(
-          "absolute left-0 top-0 z-10 z-50 flex h-screen w-[60vw] min-w-[250px] flex-col gap-8 bg-primary px-10 py-20 transition-all duration-500 md:hidden",
+          "absolute left-0 top-0 z-50 flex h-screen w-[60vw] min-w-[250px] flex-col gap-8 bg-primary px-10 py-20 transition-all duration-500 md:hidden",
           toggle ? "translate-x-0" : "translate-x-[-100%]",
         )}
       >
