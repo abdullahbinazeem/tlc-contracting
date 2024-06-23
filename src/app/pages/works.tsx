@@ -13,14 +13,9 @@ const filters = [
     searchFor: "renovations",
   },
   {
-    title: "Project Management",
-    searchFor: "Project Management",
-  },
-  {
     title: "Home Repairs",
     searchFor: "Home Repairs",
   },
-
   {
     title: "Bathrooms",
     searchFor: "Bathrooms",
@@ -48,6 +43,10 @@ const filters = [
   {
     title: "painting",
     searchFor: "painting",
+  },
+  {
+    title: "Flooring",
+    searchFor: "Laminate Countertops",
   },
   {
     title: "Laminate Countertops",
