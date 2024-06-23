@@ -5,13 +5,7 @@ import SubpageHero from "@/app/components/subpage-hero";
 import Image from "next/image";
 import Container from "@/app/components/container";
 import Gallery from "@/app/pages/gallery";
-const services = [
-  "Interior Painting",
-  "Exterior Painting",
-  "Drywall Painting",
-  "Fence and Deck Painting",
-  "Wallpaper Removal and Application",
-];
+const services = ["Floor Installations"];
 
 export const metadata: Metadata = {
   title: "Painting Services in Victoria | TLC Contracting",
@@ -22,7 +16,7 @@ const page = () => {
   return (
     <div>
       <SubpageHero
-        title="Painting"
+        title="Flooring"
         stitle="In Southern Vancouver Island"
         cta="View Work"
         ctaUrl="#works"
@@ -54,7 +48,7 @@ const page = () => {
           </div>
           <div className="relative mt-10 aspect-video w-full flex-1 basis-1/2 self-stretch lg:m-0 lg:aspect-auto">
             <Image
-              src="/assets/gallery/pa-1.jpg"
+              src="/assets/services/pa-1.jpg"
               alt="Renovation Main Photo"
               fill
               className="object-cover"
