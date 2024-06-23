@@ -12,7 +12,7 @@ const ContactOptions = [
   },
   {
     title: "Make a Call",
-    info: "(250)-592-1782",
+    info: "(250)-661-5128",
     name: "Tony Lalev",
     link: "tel:(250)-592-1782",
     icon: Phone,
@@ -25,7 +25,7 @@ const ContactOptions = [
   },
   {
     title: "Working Hours",
-    info: `Everyday 8am - 8pm. 24 hour Emergency Available`,
+    info: `Everyday 8am - 8pm. 24 hour Emergency Service Available`,
     link: "https://maps.app.goo.gl/cVYhYViAGWeHsqpVA",
     icon: DoorOpen,
   },

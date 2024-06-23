@@ -5,7 +5,12 @@ import SubpageHero from "@/app/components/subpage-hero";
 import Image from "next/image";
 import Container from "@/app/components/container";
 import Gallery from "@/app/pages/gallery";
-const services = ["Floor Installations"];
+const services = [
+  "Laminate Flooring",
+  "Hardwood Flooring",
+  "Ceramic Tile",
+  "Sheet & Vinyl Plank",
+];
 
 export const metadata: Metadata = {
   title: "Painting Services in Victoria | TLC Contracting",
@@ -48,7 +53,7 @@ const page = () => {
           </div>
           <div className="relative mt-10 aspect-video w-full flex-1 basis-1/2 self-stretch lg:m-0 lg:aspect-auto">
             <Image
-              src="/assets/services/pa-1.jpg"
+              src="/assets/services/images/flooring.jpg"
               alt="Renovation Main Photo"
               fill
               className="object-cover"

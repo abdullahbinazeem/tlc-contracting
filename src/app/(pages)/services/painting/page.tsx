@@ -8,7 +8,6 @@ import Gallery from "@/app/pages/gallery";
 const services = [
   "Interior Painting",
   "Exterior Painting",
-  "Drywall Painting",
   "Fence and Deck Painting",
   "Wallpaper Removal and Application",
 ];
