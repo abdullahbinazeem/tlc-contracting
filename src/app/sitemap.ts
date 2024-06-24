@@ -57,19 +57,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: "https://tlccontracting.ca/services/contact",
+      url: "https://tlccontracting.ca/contact",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.6,
     },
     {
-      url: "https://tlccontracting.ca/services/estimate",
+      url: "https://tlccontracting.ca/estimate",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: "https://tlccontracting.ca/services/gallery",
+      url: "https://tlccontracting.ca/gallery",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.2,
