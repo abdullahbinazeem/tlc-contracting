@@ -28,6 +28,7 @@ const Gallery = (props: Props) => {
             src={
               "/assets/gallery/" + props.gallery.title + "-" + (i + 1) + ".jpg"
             }
+            quality={50}
             alt={props.gallery.alt + " " + (i + 1)}
             fill
             className="object-cover transition-all group-hover:scale-105"

@@ -275,7 +275,7 @@ const Works = (props: Props) => {
 
   let count = 0;
   return (
-    <div id="about" className="min-h-[50vh] py-40">
+    <div id="works" className="min-h-[50vh] py-40">
       <Container className="">
         <div className="">
           <h2 className="text-2xl font-semibold text-lightblack md:text-3xl lg:text-4xl">
@@ -347,6 +347,7 @@ const Works = (props: Props) => {
               src={"/assets/works/" + photo.url + ".jpg"}
               alt={photo.alt}
               fill
+              quality={50}
               className="object-cover transition-all group-hover:scale-105"
             />
           </div>
