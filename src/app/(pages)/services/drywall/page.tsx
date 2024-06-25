@@ -13,9 +13,9 @@ const services = [
 ];
 
 export const metadata: Metadata = {
-  title: "Drywall Services in Vancouver Island | TLC Contracting",
+  title: "Drywall Services in Vancouver Island | TLC Contracting Inc.",
   description:
-    "Experience top-quality drywall services with TLC Contracting. Serving Southern Vancouver Island, our expert team specializes in drywall installation, repair, and finishing. We deliver smooth, flawless walls and ceilings with precision and care. Trust TLC Contracting for exceptional craftsmanship and reliable service. Contact us today for all your drywall needs.",
+    "Experience top-quality drywall services with TLC Contracting Inc. Serving Southern Vancouver Island, our expert team specializes in drywall installation, repair, and finishing. We deliver smooth, flawless walls and ceilings with precision and care. Trust TLC Contracting for exceptional craftsmanship and reliable service. Contact us today for all your drywall needs.",
 };
 
 const page = () => {

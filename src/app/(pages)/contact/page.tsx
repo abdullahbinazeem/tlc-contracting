@@ -10,9 +10,9 @@ import React from "react";
 import ContactForm from "./form";
 
 export const metadata: Metadata = {
-  title: "Contact | TLC Contracting",
+  title: "Contact | TLC Contracting Inc.",
   description:
-    "Get in touch with TLC Contracting, your trusted partner for high-quality home repairs and renovations in Southern Vancouver Island. Whether you need tiling, carpentry, flooring, painting, plumbing, or drywall services, our expert team is here to help. Contact us today to discuss your project, request a quote, or schedule a consultation. We look forward to working with you!",
+    "Get in touch with TLC Contracting Inc., your trusted partner for high-quality home repairs and renovations in Southern Vancouver Island. Whether you need tiling, carpentry, flooring, painting, plumbing, or drywall services, our expert team is here to help. Contact us today to discuss your project, request a quote, or schedule a consultation. We look forward to working with you!",
 };
 
 const page = () => {

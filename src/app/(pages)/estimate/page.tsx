@@ -8,9 +8,9 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Free Estimate | TLC Contracting",
+  title: "Free Estimate | TLC Contracting Inc.",
   description:
-    "Request a free estimate from TLC Contracting for your home repair and renovation projects in Southern Vancouver Island. Our expert team provides accurate and detailed quotes for services including tiling, carpentry, flooring, painting, plumbing, and drywall. Get started on your project with confidence by contacting us today for a no-obligation estimate.",
+    "Request a free estimate from TLC Contracting Inc. for your home repair and renovation projects in Southern Vancouver Island. Our expert team provides accurate and detailed quotes for services including tiling, carpentry, flooring, painting, plumbing, and drywall. Get started on your project with confidence by contacting us today for a no-obligation estimate.",
 };
 
 const page = () => {

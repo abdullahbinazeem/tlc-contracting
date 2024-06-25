@@ -6,9 +6,9 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Services | TLC Contracting",
+  title: "Services | TLC Contracting Inc.",
   description:
-    "Choose your desired home repair or renovation service with TLC Contracting. Serving Southern Vancouver Island, our comprehensive offerings include expert tiling, carpentry, flooring, painting, plumbing, and drywall solutions. Explore our specialized services and select the perfect option to enhance your home. Contact TLC Contracting today to get started on transforming your space with quality craftsmanship and professional expertise.",
+    "Choose your desired home repair or renovation service with TLC Contracting Inc. Serving Southern Vancouver Island, our comprehensive offerings include expert tiling, carpentry, flooring, painting, plumbing, and drywall solutions. Explore our specialized services and select the perfect option to enhance your home. Contact TLC Contracting today to get started on transforming your space with quality craftsmanship and professional expertise.",
 };
 const serviceList = [
   {

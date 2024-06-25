@@ -9,9 +9,9 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Works Gallery | TLC Contracting",
+  title: "Works Gallery | TLC Contracting Inc.",
   description:
-    "Explore the craftsmanship of TLC Contracting through our gallery page showcasing stunning home repairs and renovations in Southern Vancouver Island. View examples of our expert tiling, carpentry, flooring, painting, plumbing, and drywall projects. Get inspired and see how we can transform your space. Visit our gallery today and envision the possibilities for your home.",
+    "Explore the craftsmanship of TLC Contracting Inc. through our gallery page showcasing stunning home repairs and renovations in Southern Vancouver Island. View examples of our expert tiling, carpentry, flooring, painting, plumbing, and drywall projects. Get inspired and see how we can transform your space. Visit our gallery today and envision the possibilities for your home.",
 };
 
 const page = () => {

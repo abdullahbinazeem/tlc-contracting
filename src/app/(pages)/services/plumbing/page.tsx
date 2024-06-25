@@ -14,9 +14,9 @@ const services = [
 ];
 
 export const metadata: Metadata = {
-  title: "Plumbing Services in Vancouver Island | TLC Contracting",
+  title: "Plumbing Services in Vancouver Island | TLC Contracting Inc.",
   description:
-    "Reliable plumbing services in Southern Vancouver Island by TLC Contracting. Our experienced plumbers handle everything from minor repairs to major installations with precision and care. Trust TLC Contracting for prompt, efficient, and high-quality plumbing solutions that keep your home running smoothly. Contact us today for professional plumbing services you can count on.",
+    "Reliable plumbing services in Southern Vancouver Island by TLC Contracting Inc. Our experienced plumbers handle everything from minor repairs to major installations with precision and care. Trust TLC Contracting for prompt, efficient, and high-quality plumbing solutions that keep your home running smoothly. Contact us today for professional plumbing services you can count on.",
 };
 
 const page = () => {

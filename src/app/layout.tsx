@@ -5,9 +5,9 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TLC Contracting",
+  title: "TLC Contracting Inc.",
   description:
-    "TLC Contracting is your trusted partner for high-quality home repairs and renovations. Our expert team specializes in a wide range of services, including tiling, carpentry, flooring, painting, plumbing, and drywall. With a commitment to excellence and attention to detail, we transform spaces to meet your needs and exceed your expectations. Discover the TLC difference and let us bring your vision to life.",
+    "TLC Contracting Inc. is your trusted partner for high-quality home repairs and renovations. Our expert team specializes in a wide range of services, including tiling, carpentry, flooring, painting, plumbing, and drywall. With a commitment to excellence and attention to detail, we transform spaces to meet your needs and exceed your expectations. Discover the TLC difference and let us bring your vision to life.",
 };
 
 export default function RootLayout({

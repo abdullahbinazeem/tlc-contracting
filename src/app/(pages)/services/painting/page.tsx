@@ -13,9 +13,9 @@ const services = [
 ];
 
 export const metadata: Metadata = {
-  title: "Painting Services in Vancouver Island | TLC Contracting",
+  title: "Painting Services in Vancouver Island | TLC Contracting Inc.",
   description:
-    "Revitalize your space with professional painting services in Southern Vancouver Island from TLC Contracting. Our skilled painters provide exceptional interior and exterior painting solutions, ensuring a flawless finish and lasting beauty. Trust TLC Contracting for meticulous attention to detail and superior craftsmanship. Contact us today to transform your home with our expert painting services.",
+    "Revitalize your space with professional painting services in Southern Vancouver Island from TLC Contracting Inc. Our skilled painters provide exceptional interior and exterior painting solutions, ensuring a flawless finish and lasting beauty. Trust TLC Contracting for meticulous attention to detail and superior craftsmanship. Contact us today to transform your home with our expert painting services.",
 };
 
 const page = () => {

@@ -14,9 +14,9 @@ const services = [
 ];
 
 export const metadata: Metadata = {
-  title: "Tiling Services in Vancouver Island | TLC Contracting",
+  title: "Tiling Services in Vancouver Island | TLC Contracting Inc.",
   description:
-    "Explore premium tiling services in Southern Vancouver Island with TLC Contracting. Our skilled professionals deliver exceptional craftsmanship for all your tiling needs, from kitchen backsplashes to bathroom floors and beyond. Trust TLC Contracting to provide beautiful, durable tiling solutions that enhance the aesthetic and value of your home. Contact us today for a consultation and experience the difference in quality and service.",
+    "Explore premium tiling services in Southern Vancouver Island with TLC Contracting Inc. Our skilled professionals deliver exceptional craftsmanship for all your tiling needs, from kitchen backsplashes to bathroom floors and beyond. Trust TLC Contracting to provide beautiful, durable tiling solutions that enhance the aesthetic and value of your home. Contact us today for a consultation and experience the difference in quality and service.",
 };
 
 const page = () => {

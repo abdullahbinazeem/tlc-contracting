@@ -4,9 +4,9 @@ import SubpageHero from "@/app/components/subpage-hero";
 import Container from "@/app/components/container";
 
 export const metadata: Metadata = {
-  title: "Renovation Services in Vancouver Island | TLC Contracting",
+  title: "Renovation Services in Vancouver Island | TLC Contracting Inc.",
   description:
-    "Transform your home with TLC Contracting's top-notch renovation services. Specializing in comprehensive home renovations, we offer expert solutions in tiling, carpentry, flooring, painting, plumbing, and drywall. Serving Southern Vancouver Island, our dedicated team brings your vision to life with precision and care. Experience superior craftsmanship and attention to detail with TLC Contracting. Contact us today for a consultation and start your renovation journey.",
+    "Transform your home with TLC Contracting Inc.'s top-notch renovation services. Specializing in comprehensive home renovations, we offer expert solutions in tiling, carpentry, flooring, painting, plumbing, and drywall. Serving Southern Vancouver Island, our dedicated team brings your vision to life with precision and care. Experience superior craftsmanship and attention to detail with TLC Contracting. Contact us today for a consultation and start your renovation journey.",
 };
 
 import Image from "next/image";
