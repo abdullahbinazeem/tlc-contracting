@@ -1,5 +1,6 @@
+"use client";
+
 import React from "react";
-import Container from "../components/container";
 import {
   Mail,
   Notebook,
@@ -11,6 +12,31 @@ import {
 import Image from "next/image";
 
 const Form = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event: any) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "4e9d3630-8ddc-4acc-8516-49c5af128449");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="overflow-hidden bg-[#f9f9f9] py-40" id="form">
       <div className="m-auto max-w-[1320px] md:px-5">
@@ -20,11 +46,7 @@ const Form = () => {
               Get An Estimate Now
             </h1>
 
-            <form
-              className="w-full"
-              action="https://formsubmit.co/info@albcanada.ca"
-              method="POST"
-            >
+            <form className="w-full" onSubmit={onSubmit}>
               <div className="flex flex-col gap-2">
                 <div className="group relative">
                   <input
@@ -105,10 +127,16 @@ const Form = () => {
                   />
                 </div>
               </div>
-              <button className="font-medoum mt-8 w-full rounded-sm bg-primary px-5 py-4 uppercase tracking-wide text-gray-100 focus:outline-none">
+              <button
+                type="submit"
+                className="font-medoum mt-8 w-full rounded-sm bg-primary px-5 py-4 uppercase tracking-wide text-gray-100 focus:outline-none"
+              >
                 Submit Now
               </button>
             </form>
+            <p className="mt-2 text-base font-semibold text-green-600">
+              {result}
+            </p>
           </div>
           <div className="relative bottom-0 top-0 m-auto hidden aspect-video w-[50%] lg:absolute lg:right-[-10%] lg:block">
             <Image
