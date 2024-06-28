@@ -2,6 +2,8 @@ import Container from "@/app/components/container";
 import Navbar from "@/app/components/navbar";
 import React from "react";
 
+import Image from "next/image";
+
 type Props = {
   title: string;
   stitle: string;
@@ -11,11 +13,18 @@ type Props = {
 
 const SubpageHero = (props: Props) => {
   return (
-    <div className="border-b-2 bg-[url('/assets/hero/hero-bg.jpg')] bg-bottom">
+    <div className="relative border-b-2 bg-bottom">
+      <Image
+        src="/assets/hero/hero-bg.jpg"
+        alt="bg-photo"
+        className="absolute h-full w-full object-cover"
+        width={1000}
+        height={300}
+      />
       <div className="m-auto max-w-[1320px] md:px-5 md:pt-10">
         <Navbar />
       </div>
-      <Container className="m-auto bg-center px-5 pb-20">
+      <Container className="relative m-auto bg-center px-5 pb-20">
         <div className="mt-14 items-center gap-20 md:mt-28">
           <h1 className="text-4xl font-extrabold leading-[110%] tracking-wide text-black sm:text-5xl xl:text-6xl">
             <span className="block uppercase text-primary">{props.title}</span>{" "}

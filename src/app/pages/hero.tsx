@@ -1,23 +1,27 @@
 import React from "react";
 
 import Image from "next/image";
-import Container from "../components/container";
 import Navbar from "../components/navbar";
 
-type Props = {};
-
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
-    <div className="min-h-screen bg-[url('/assets/hero/hero-bg.jpg')]">
+    <div className="relative min-h-screen">
+      <Image
+        src="/assets/hero/hero-bg.jpg"
+        className="object-cover"
+        alt="bg-img"
+        fill
+      />
       <div className="z-[10] m-auto max-w-[1320px] md:px-5 md:pt-10">
         <Navbar />
       </div>
-      <div className="m-auto max-w-[1420px] bg-center px-5 pb-10">
+      <div className="relative m-auto max-w-[1420px] bg-center px-5 pb-10">
         <div className="mt-14 items-center gap-20 md:mt-28 lg:flex lg:flex-row-reverse">
           <div className="relative z-[0] m-auto aspect-[13/9] max-h-[35vh] basis-2/3 md:max-h-[45vh] lg:max-h-none">
             <Image
               src="/assets/hero/hero-van.png"
               alt="BBB Business A Plus"
+              quality={35}
               fill
               className="w-full object-contain"
             />

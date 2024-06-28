@@ -1,5 +1,3 @@
-import Container from "@/app/components/container";
-import Navbar from "@/app/components/navbar";
 import SubpageHero from "@/app/components/subpage-hero";
 import Footer from "@/app/pages/footer";
 import Form from "@/app/pages/form";

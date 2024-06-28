@@ -2,6 +2,7 @@
 
 import React from "react";
 import Container from "../components/container";
+
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";

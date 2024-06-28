@@ -3,9 +3,7 @@ import React from "react";
 
 import { Mail, PhoneCall, TextSelect, UserRound } from "lucide-react";
 
-type Props = {};
-
-const ContactForm = (props: Props) => {
+const ContactForm = () => {
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event: any) => {

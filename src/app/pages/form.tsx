@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Mail,
-  Notebook,
-  PhoneCall,
-  Scan,
-  TextSelect,
-  UserRound,
-} from "lucide-react";
+import { Mail, PhoneCall, TextSelect, UserRound } from "lucide-react";
 import Image from "next/image";
 
 const Form = () => {

@@ -1,8 +1,7 @@
 import Image from "next/image";
 
 import Container from "../components/container";
-
-import { CircleCheckBig, ShieldCheck, TreePine, Trophy } from "lucide-react";
+import { CircleCheckBig, TreePine, Trophy } from "lucide-react";
 
 const About = () => {
   return (
@@ -10,9 +9,9 @@ const About = () => {
       <Container className="min-h-[50vh] py-40">
         <div className="items-center gap-20 lg:flex">
           <div className="flex-1 basis-0">
-            <h2 className="text-2xl font-semibold text-lightblack md:text-3xl lg:text-4xl">
+            <p className="text-2xl font-semibold text-lightblack md:text-3xl lg:text-4xl">
               Why Choose Us?
-            </h2>
+            </p>
             <h1 className="mt-4 text-4xl font-bold leading-[110%] text-primary md:text-5xl lg:text-6xl">
               40 Years <span className="block text-black">of Experience!</span>
             </h1>

@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
-import Container from "../components/container";
+import { useState } from "react";
 
+import Container from "../components/container";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { MinusIcon, PlusIcon } from "lucide-react";

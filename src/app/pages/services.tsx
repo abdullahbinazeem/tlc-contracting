@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "../components/container";
 
 import Image from "next/image";
 import { ChevronsRight } from "lucide-react";
@@ -64,7 +63,7 @@ const Services = () => {
               <div className="group relative h-[400px] overflow-hidden rounded-xl md:h-[500px]">
                 <Image
                   src={`/assets/services/images/${service.img}.jpg`}
-                  alt={service.title}
+                  alt={service.title + " Services Page"}
                   fill
                   quality={35}
                   className="object-cover transition-all duration-[300ms] group-hover:scale-125"

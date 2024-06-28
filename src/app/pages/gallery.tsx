@@ -1,8 +1,3 @@
-"use client";
-
-import React, { useState } from "react";
-import Container from "../components/container";
-
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 

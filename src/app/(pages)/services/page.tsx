@@ -76,7 +76,7 @@ const page = () => {
               <div className="group relative h-[400px] overflow-hidden rounded-xl md:h-[500px]">
                 <Image
                   src={`/assets/services/images/${service.img}.jpg`}
-                  alt={service.title}
+                  alt={service.title + " Services Page"}
                   fill
                   className="object-cover transition-all duration-[300ms] group-hover:scale-125"
                 />

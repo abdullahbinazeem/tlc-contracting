@@ -1,7 +1,6 @@
-import Container from "@/app/components/container";
-import { DoorOpen, Home, icons, Mails, Phone } from "lucide-react";
+import Container from "../components/container";
+import { DoorOpen, Home, Mails, Phone } from "lucide-react";
 import React from "react";
-import Image from "next/image";
 
 const ContactOptions = [
   {

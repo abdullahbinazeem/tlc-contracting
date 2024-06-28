@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 
 import SubpageHero from "@/app/components/subpage-hero";
-import Form from "@/app/pages/form";
-import Footer from "@/app/pages/footer";
 import Container from "@/app/components/container";
 
 import Image from "next/image";
