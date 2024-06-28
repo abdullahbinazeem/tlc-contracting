@@ -13,7 +13,7 @@ const services = [
 ];
 
 export const metadata: Metadata = {
-  title: "Painting Services in Vancouver Island | TLC Contracting Inc.",
+  title: "Flooring Services in Vancouver Island | TLC Contracting Inc.",
   description:
     "Upgrade your home with premium flooring services in Southern Vancouver Island from TLC Contracting Inc. Our expert team specializes in the installation and repair of a variety of flooring types, including hardwood, laminate, and tile. With a commitment to quality and precision, we ensure beautiful, durable results that enhance the comfort and value of your space. Contact TLC Contracting today for professional flooring solutions tailored to your needs.",
 };
