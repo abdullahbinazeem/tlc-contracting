@@ -21,7 +21,6 @@ const Hero = () => {
             <Image
               src="/assets/hero/hero-van.png"
               alt="BBB Business A Plus"
-              quality={35}
               fill
               className="w-full object-contain"
             />

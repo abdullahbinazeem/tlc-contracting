@@ -65,7 +65,6 @@ const Services = () => {
                   src={`/assets/services/images/${service.img}.jpg`}
                   alt={service.title + " Services Page"}
                   fill
-                  quality={35}
                   className="object-cover transition-all duration-[300ms] group-hover:scale-125"
                 />
                 <div className="absolute z-10 h-full w-full bg-[#111] opacity-70 transition-all duration-[300ms] group-hover:rotate-180 group-hover:scale-0" />
