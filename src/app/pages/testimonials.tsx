@@ -25,15 +25,6 @@ const carouselItems = [
 const Testimonials = () => {
   return (
     <div id="testimonials" className="relative">
-      <div className="absolute left-0 top-0 z-[0] h-full w-full">
-        <Image
-          src="/assets/review-bg.avif"
-          alt="review background photo"
-          fill
-          className="z-[10] object-cover"
-        />
-        <div className="absolute z-[20] h-full w-full bg-white opacity-90" />
-      </div>
       <Container className="relative z-[1] min-h-[50vh] py-40">
         <h2 className="text-2xl font-semibold text-lightblack md:text-3xl lg:text-4xl">
           What people say!
