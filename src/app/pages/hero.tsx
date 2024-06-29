@@ -41,7 +41,7 @@ const Hero = () => {
               <span className="font-semibold text-primary">
                 BBB A plus rating
               </span>{" "}
-              since 2003.
+              since 2003. Certified with Home Depot as Pro Certified Installer.
             </p>
             <a href="#about">
               <div className="mt-6 inline-block rounded-sm border-2 border-[#EEEEEE] bg-[#EEEEEE] px-8 py-4 font-semibold uppercase text-black transition-all hover:border-primary md:text-lg">

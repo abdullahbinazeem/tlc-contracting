@@ -1,7 +1,13 @@
 import Image from "next/image";
 
 import Container from "../components/container";
-import { CircleCheckBig, TreePine, Trophy } from "lucide-react";
+import {
+  CircleCheckBig,
+  TreePine,
+  Trophy,
+  HardHat,
+  ShieldCheck,
+} from "lucide-react";
 
 const About = () => {
   return (
@@ -53,6 +59,20 @@ const About = () => {
                     size={30}
                   />
                   Liabilty Insured ($3,000,000) & WCB
+                </div>
+                <div className="flex items-center gap-4">
+                  <HardHat
+                    className="h-6 w-6 text-primary sm:h-8 sm:w-8"
+                    size={30}
+                  />
+                  Home Depot Local Pro Licensed Certified Installer
+                </div>
+                <div className="flex items-center gap-4">
+                  <ShieldCheck
+                    className="h-6 w-6 text-primary sm:h-8 sm:w-8"
+                    size={30}
+                  />
+                  Home Depot Certified Criminal Record Check
                 </div>
               </div>
             </div>
