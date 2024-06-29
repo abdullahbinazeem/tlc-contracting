@@ -48,28 +48,28 @@ const About = () => {
               <div className="text-sn flex flex-col gap-4 font-semibold text-lightblack sm:text-base">
                 <div className="flex items-center gap-4">
                   <TreePine
-                    className="h-6 w-6 text-primary sm:h-8 sm:w-8"
+                    className="h-6 w-6 shrink-0 text-primary sm:h-8 sm:w-8"
                     size={30}
                   />
                   A+ Better Business Bureau Rating
                 </div>
                 <div className="flex items-center gap-4">
                   <Trophy
-                    className="h-6 w-6 text-primary sm:h-8 sm:w-8"
+                    className="h-6 w-6 shrink-0 text-primary sm:h-8 sm:w-8"
                     size={30}
                   />
                   Liabilty Insured ($3,000,000) & WCB
                 </div>
                 <div className="flex items-center gap-4">
                   <HardHat
-                    className="h-6 w-6 text-primary sm:h-8 sm:w-8"
+                    className="h-6 w-6 shrink-0 text-primary sm:h-8 sm:w-8"
                     size={30}
                   />
                   Home Depot Local Pro Licensed Certified Installer
                 </div>
                 <div className="flex items-center gap-4">
                   <ShieldCheck
-                    className="h-6 w-6 text-primary sm:h-8 sm:w-8"
+                    className="h-6 w-6 shrink-0 text-primary sm:h-8 sm:w-8"
                     size={30}
                   />
                   Home Depot Certified Criminal Record Check
